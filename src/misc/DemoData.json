@@ -1,0 +1,65 @@
+{
+    "CNCmachine":[
+        {
+            "uuid":"YXBbESRIt0G6PljYNiYWVw",
+            "image":"http://news.doddleme.com/wp-content/uploads/2015/07/2236476-gsm_169_MarvelHeroes_SpiderMan_090613_320-300x168.jpg",
+            "ip":"60.123.184.92",
+            "name":"Spider Man"
+
+        },
+        {
+            "uuid":"2Ab3qSX2zkuqCCLlmGY2aQ",
+            "image":"https://cdn-static.denofgeek.com/sites/denofgeek/files/styles/main_wide/public/2018/04/doctor_strange_main.jpg",
+            "ip":"23.59.23.135",
+            "name":"Dr. Strange"
+        },
+        {
+            "uuid":"oopVeaoBk0iIZFRyJOoZRQ",
+            "image":"https://am24.akamaized.net/tms/cnt/uploads/2018/05/black-widow-scarlett-johansson-marvel-the-avengers.jpg",
+            "ip":"187.65.58.36",
+            "name":"Black Widow"
+        },
+        {
+            "uuid":"qSvrTeh5mE2txtbji1j1Tg",
+            "image":"https://silverscreen.in/wp-content/uploads/2018/12/capt-marvel.jpg",
+            "ip":"78.188.200.115",
+            "name":"Captain Marvel"
+        },
+        {
+            "uuid":"Q_Nb-vCDYE2klnaV9MOgQQ",
+            "image":"https://www.sideshow.com/storage/product-images/903341/iron-man-mark-iv_marvel_feature.jpg",
+            "ip":"27.134.239.137",
+            "name":"Iron Man"
+        },
+        {
+            "uuid":"HPud8HjJyUyQRKFGUKKajw",
+            "image":"https://www.washingtonpost.com/resizer/F4Hg3j8QRDH47Z-a64ICsLYX_hM=/1024x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/Z6AXNM5VTM5WHNMJWRXWBS7PWE.jpg",
+            "ip":"113.53.55.15",
+            "name":"Black Panther"
+        },
+        {
+            "uuid":"fkGZCdXfbzEyK7OksSkmjOA",
+            "image":"https://cdn3.movieweb.com/i/article/Oi0Q2edcVVhs4p1UivwyyseezFkHsq/1107:50/Ant-Man-3-Talks-Michael-Douglas-Update.jpg",
+            "ip":"211.44.236.132",
+            "name":"Ant Man"
+        },
+        {
+            "uuid":"m2p3fUQaJkuBIomIepJonw",
+            "image":"https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/06/15/Pictures/_1caf1900-7098-11e8-bbf6-b72314b60444.jpg",
+            "ip":"92.97.220.184",
+            "name":"Hulk"
+        },
+        {
+            "uuid":"wHEc_CFfVkCNM2WkBi1itg",
+            "image":"https://timedotcom.files.wordpress.com/2016/04/captain-america.jpg",
+            "ip":"9.82.186.207",
+            "name":"Captian America"
+        },
+        {
+            "uuid":"T1ykCfH1p0CWQJnXMh-pTQ",
+            "image":"https://cdn.vox-cdn.com/thumbor/YQmGIdKiZFCEFpIac7ZR57bkcak=/0x0:1200x600/1820x1213/filters:focal(552x137:744x329):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/58955377/Winter_Soldier.0.jpg",
+            "ip":"108.136.253.22",
+            "name":"Winter Soldier"
+        }
+    ]
+}

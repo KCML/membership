@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import TopNavBar from './components/TopNavBar';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import ManagementPage from './pages/ManagementPage';
+import Page404 from './pages/Page404';
+import LandingPage from './pages/LandingPage';
+import ForgetPassword from './pages/ForgetPasswordPage';
 
-function App() {
+// import BaseModal from './components/BaseModal';
+const App = () =>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <TopNavBar />
+      <Switch>
+        <Route path="/" exact component={LandingPage} />
+        <Route path="/login" exact component={LoginPage} />
+        <Route path="/register" exact component={RegisterPage} />
+        <Route path="/management" exact component={ManagementPage}/>
+        <Route path="/forget" exact component={ForgetPassword}/>
+        <Route component={Page404} />
+      </Switch>
+    </BrowserRouter>
+    // <EntryPage />
+    // <ManagementPage />
+    // <BaseModal />
   );
 }
 
