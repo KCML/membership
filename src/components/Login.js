@@ -9,8 +9,8 @@ const Login = () => {
     const {handleChange, handleEntry, hasSubmitted ,values, errors} = useValidation(login,validateInputValues);
     
     async function login()  {
-        console.log("errors: " + errors);
-        console.log("values: " + values);
+        // console.log(errors);
+        // console.log(values);
         await axios.post('http://localhost:5000/login',values)
         .then(res => console.log(res.data))
         .catch(err => console.log(err));
@@ -37,7 +37,7 @@ const Login = () => {
                         <Link to="/forget" className="text-center">Forget Password?</Link>
                     </Col>
                 </Row>
-                <Button className="round-button-md" color="info" block onClick={()=>{handleEntry();console.log("Login clicked");}}>Login</Button>
+                <Button className="round-button-md" color="info" block onClick={()=>{handleEntry("login");console.log("Login clicked");}}>Login</Button>
             </CardBody>
         </Card>
     );

@@ -47,7 +47,7 @@ const Register = () => {
                     </FormGroup>
                 </Form>
                 <Link to="/login">Already member?</Link>
-                <Button className="round-button-md" color="info" block onClick={()=>{handleEntry();console.log("Register is clicked")}}>Regsiter</Button>
+                <Button className="round-button-md" color="info" block onClick={()=>{handleEntry("register");console.log("Register is clicked")}}>Regsiter</Button>
             </CardBody>
         </Card>
     );

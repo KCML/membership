@@ -4,16 +4,14 @@ const useValidation = (callback,validateInputValues) => {
     const [values,setValues] = useState({});
     const [errors,setErrors] = useState({});
     const [hasSubmitted, setHasSubmitted] = useState(false);
-
-    useEffect((callback,hasSubmitted) => {
-        (() => {
-            console.log(values);
-            console.log(errors);
-            if(Object.keys(errors).length === 0 && hasSubmitted) {
-                console.log("useEffect()");
-                callback();
-            }
-        })();
+    
+    useEffect(() => {
+        // ((callback,hasSubmitted) => {
+        //     if((Object.keys(errors).length === 0) && hasSubmitted) {
+        //         console.log("useEffect()");
+        //         callback();
+        //     }
+        // })(callback,hasSubmitted);
     },[errors]);
 
     const handleChange = event => {
@@ -21,12 +19,8 @@ const useValidation = (callback,validateInputValues) => {
         setValues(values => ({...values, [event.target.name]:event.target.value}));
     };
 
-    const handleEntry = event => {
-        console.log(event);
-        if (event) {
-            event.preventDefault();
-        }
-        setErrors(validateInputValues(values));
+    const handleEntry = (entry) => {
+        setErrors(validateInputValues(entry, values));
         setHasSubmitted(true);
     }
     
