@@ -1,13 +1,28 @@
-import React from 'react';
-import axios from 'axios';
-import {Link} from 'react-router-dom';
-import {Button, Card, CardBody,Col, Form, FormFeedback, FormGroup, Input, Row} from 'reactstrap';
-import validateInputValues from '../misc/EntryValidationResult';
-import useValidation from '../hooks/useValidation';
+// import React, {useState} from 'react';
+// import axios from 'axios';
+// import {Link} from 'react-router-dom';
+// import {Button, Card, CardBody,Col, Form, FormFeedback, FormGroup, Input, Row} from 'reactstrap';
+// import validateInputValues from '../misc/EntryValidationResult';
+// import validate from '../misc/validate';
 
+/*
 const Register = () => {
-    const {handleChange, handleEntry, hasSubmitted ,values, errors} = useValidation(register,validateInputValues);
     
+    const {handleChange, handleEntry, hasSubmitted ,values, errors} = validate(register,validateInputValues);
+    // const [values,setValues] = useState({});
+    // const [errors,setErrors] = useState({});
+    // const [hasSubmitted,setHasSubmitted] = useState(false);
+
+    // const handleChange = event => {
+    //     event.persist();
+    //     setValues(values => ({...values, [event.target.name]:event.target.value}));
+    // };
+
+    // const handleEntry = (entry) => {
+    //     setErrors(validateInputValues(entry, values));
+    //     setHasSubmitted(true);
+    // }
+
     async function register(){
         console.log(values);
         axios.post('http://localhost:5000/register',values)
@@ -47,10 +62,11 @@ const Register = () => {
                     </FormGroup>
                 </Form>
                 <Link to="/login">Already member?</Link>
-                <Button className="round-button-md" color="info" block onClick={()=>{handleEntry("register");console.log("Register is clicked")}}>Regsiter</Button>
+                <Button className="round-button-md" color="info" block onClick={()=>{handleEntry("register");if(errors.length === 0) register();console.log("Register is clicked")}}>Regsiter</Button>
             </CardBody>
         </Card>
     );
 }
+*/
 
-export default Register;
+// export default Register;
